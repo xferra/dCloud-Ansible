@@ -29,7 +29,6 @@ ExecStartPre=-/sbin/modprobe overlay
 ExecStart=/usr/local/bin/k3s \
 server \
 --write-kubeconfig-mode 644 \
---advertise-address=86.57.237.180 \
 --tls-san=86.57.237.180 \
 {% if metallb is sameas true %}
 --disable servicelb \
