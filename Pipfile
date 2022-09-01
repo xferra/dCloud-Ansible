@@ -12,5 +12,6 @@ ansible-core = "==2.13.3"
 python_version = "3.9"
 
 [scripts]
+install  = "ansible-galaxy install -r requirements.yml"
 deploy   = "ansible-playbook site.yml"
 destroy  = "ansible-playbook remove.yml"
