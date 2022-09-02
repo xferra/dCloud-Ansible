@@ -60,6 +60,8 @@
   when: ansible_distribution in ['CentOS', 'Red Hat Enterprise Linux']
 
 - name: install nfs-common on the servers
-  package:
-    name: nfs-common
+  apt:
+    name: nfc-common
     state: present
+    lock_timeout: 360
+
