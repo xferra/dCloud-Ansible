@@ -61,7 +61,7 @@
 
 - name: install nfs-common on the servers
   apt:
-    name: nfc-common
+    name: nfs-common
     state: present
     lock_timeout: 360
 
