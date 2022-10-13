@@ -29,4 +29,5 @@ ExecStartPre=-/sbin/modprobe overlay
 ExecStart=/usr/local/bin/k3s \
 server \
 --write-kubeconfig-mode 644 \
+--tls-san=86.57.237.180 \
 --disable traefik \
