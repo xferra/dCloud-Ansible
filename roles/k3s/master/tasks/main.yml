@@ -2,7 +2,7 @@
 - name: Copy K3s service file
   register: k3s_service
   template:
-    src: "k3s.service.j2"
+    src: "k3s.service.j2.withoutterafic"
     dest: "{{ systemd_dir }}/k3s.service"
     owner: root
     group: root
